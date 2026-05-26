@@ -4,9 +4,9 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public record PedidoEventDTO(
-    String zipCode,
-    Long customerId,
-    List<ItemEventDTO> orderItems,
-    String origin,
-    LocalDateTime occurredAt
+        String zipCode,
+        Long customerId,
+        List<ItemEventDTO> orderItems,
+        String origin,
+        LocalDateTime occurredAt
 ) {}

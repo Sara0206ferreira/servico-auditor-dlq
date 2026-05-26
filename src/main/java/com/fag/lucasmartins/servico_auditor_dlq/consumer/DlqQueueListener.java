@@ -16,7 +16,7 @@ public class DlqQueueListener {
         this.objectMapper = objectMapper;
     }
 
-    @SqsListener("T02N_lucas_martins_pedido_queue_dlq")
+    @SqsListener("T02N_SARA_FERREIRA_DA_SILVA-DLQ.fifo")
     public void listen(String rawPayload) {
         try {
             System.out.println(">>> [DLQ] Mensagem recebida: " + rawPayload);
